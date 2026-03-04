@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Project 2 - Flask Running!"
+    return "Hello from DevOps CI/CD Project 🚀"
 
 @app.route("/health")
 def health():
-    return {"status": "healthy"}
+    return {"status": "Application Running"}
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
